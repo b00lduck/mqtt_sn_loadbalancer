@@ -48,6 +48,10 @@ You can now run the service with:
 
  go run .
  
+Run a UDP call with:
+
+ nslookup -port=2000 blah localhost
+ 
 ## Test 
  
 To run the tests call:
