@@ -1,5 +1,29 @@
 # mqtt_sn_loadbalancer
 
+## Golang general
+
+Tutorial (go official):
+https://tour.golang.org/welcome/1
+
+Reference (go official):
+https://golang.org/doc/effective_go.html
+
+
+## Frameworks
+
+Configuration: t.b.d.
+Logging: https://github.com/Sirupsen/logrus
+MongoDB: https://github.com/go-mgo/mgo/tree/v2
+HAProxyV2: https://godoc.org/github.com/pires/go-proxyproto
+
+Go has by default:
+  HTTP server (https://golang.org/pkg/net/http/)
+  UDP server (https://golang.org/pkg/net/)
+  Test framework (https://golang.org/pkg/testing/)
+  Test runner (go test)
+  Static code analyis (govet)
+  
+
 ## Project creation
 
 Change to an empty working directory of your choice.
