@@ -42,15 +42,22 @@ The project is set up and your GOPATH is now set. Check this with:
  
 ## Run 
  
-You can now run the service with:
+You can now run the service directly with go:
 ```
- go run .
+ go run . 
 ```
-Run a UDP call with:
+
+or with docker:
+```
+ docker build -t mqtt_sn_loadbalancer:latest . && docker run mqtt_sn_loadbalancer:latest 
+```
+
+Run a Test-UDP call (misusing nslookup as UDP-generator ;D)with:
 ```
  nslookup -port=2000 blah localhost
 ``` 
-## Test 
+
+## Running Tests 
  
 To run the tests call:
 ```
