@@ -32,7 +32,7 @@ You can now run the service with docker (note the -i parameter):
 
 ```
 
-Run a Test-UDP call
+Run a Test-UDP call:
 ```
  echo test | netcat -u localhost 20000
 ``` 

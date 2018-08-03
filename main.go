@@ -42,7 +42,7 @@ func main() {
     reader := bufio.NewReader(os.Stdin)
     expectedLength, err := reader.Read(expectedData)
     if err != nil {
-        log.Error("Error reading from stdin", err)
+        log.Fatal("Error reading from stdin", err)
     }
 
     log.WithField("length", expectedLength).
