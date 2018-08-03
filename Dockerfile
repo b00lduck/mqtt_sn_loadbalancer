@@ -1,7 +1,7 @@
 FROM golang:alpine AS builder
 RUN apk add --no-cache git
-ADD . src/github.com/b00lduck/mqtt_sn_loadbalancer
-WORKDIR src/github.com/b00lduck/mqtt_sn_loadbalancer
+ADD . src/github.com/b00lduck/udp-packet-comparator
+WORKDIR src/github.com/b00lduck/udp-packet-comparator
 RUN go get ./... &&\
     go vet ./... &&\
     go test ./... &&\
@@ -11,4 +11,4 @@ FROM scratch
 USER 100:100
 COPY --from=builder /app /app
 ENTRYPOINT ["/app"]
-#EXPOSE 8080
+ 
