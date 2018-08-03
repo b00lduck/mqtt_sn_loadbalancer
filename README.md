@@ -6,6 +6,9 @@
 Change to an empty working directory of your choice.
 Then manually create the directory structure like this:
  
+## Limitations
+Maximum packet length is 65535 bytes.
+
 
 ## Defaults
 ```
