@@ -7,6 +7,7 @@ import (
     "os"
     "strings"
     "bufio"
+    "io/ioutil"
 )
 
 func main() {
@@ -38,12 +39,12 @@ func main() {
 
 
     // Read expected data
-    expectedData := make([]byte, 65536)
     reader := bufio.NewReader(os.Stdin)
-    expectedLength, err := reader.Read(expectedData)
+    expectedData, err := ioutil.ReadAll(reader)
     if err != nil {
         log.Fatal("Error reading from stdin", err)
     }
+    expectedLength := len(expectedData)
 
     log.WithField("length", expectedLength).
         Info("Got expected data from stdin")
